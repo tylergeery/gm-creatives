@@ -1,0 +1,17 @@
+runtime: go
+api_version: go1
+
+handlers:
+
+- url: /assets/*.css
+  static_dir: public/css
+
+- url: /assets/*.js
+  static_dir: public/js
+
+- url: /assets/*
+  static_dir: public/img
+
+# All URLs are handled by the application
+- url: /.*
+  script: _go_app
