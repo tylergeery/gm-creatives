@@ -1,0 +1,25 @@
+{
+  "name": "gm-creatives",
+  "version": "1.0.0",
+  "description": "A simple static website for GM Creatives",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylergeery/gm-creatives.git"
+  },
+  "author": "Tyler Geery",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylergeery/gm-creatives/issues"
+  },
+  "homepage": "https://github.com/tylergeery/gm-creatives#readme",
+  "devDependencies": {
+    "bulma-start": "0.0.2"
+  },
+  "dependencies": {
+    "bulma": "^0.7.1"
+  }
+}
