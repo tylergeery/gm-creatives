@@ -1,13 +1,110 @@
 {{define "content"}}
-<h1>GM Creatives</h1>
+<section class="container" id="pricing">
+    <h3>Pricing</h3>
+    <div class="tile is-ancestor">
+      <div class="tile is-4 is-vertical is-parent">
+        <div class="tile is-child box">
+          <p class="title">One</p>
+        </div>
+        <div class="tile is-child box">
+          <p class="title">Two</p>
+        </div>
+      </div>
+      <div class="tile is-4 is-vertical is-parent">
+        <div class="tile is-child box">
+          <p class="title">One</p>
+        </div>
+        <div class="tile is-child box">
+          <p class="title">Two</p>
+        </div>
+      </div>
+      <div class="tile is-4 is-vertical is-parent">
+        <div class="tile is-child box">
+          <p class="title">One</p>
+        </div>
+        <div class="tile is-child box">
+          <p class="title">Two</p>
+        </div>
+      </div>
+    </div>
+</section>
 
 <img id="logo" src="/assets/gcp-gopher.svg" width="100">
 
+<section class="container">
+    <form action="/" method="post">
+        <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Text input">
+        </div>
+      </div>
 
-<form action="/" method="post">
-  <div>Name: <input type="text" name="name" value="" /></div>
-  <div>Email: <input type="text" name="email" value="" /></div>
-  <div>Message: <textarea name="message"></textarea></div>
-  <button type="button">Contact</button>
-</form>
+      <div class="field">
+        <label class="label">Username</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+        <p class="help is-success">This username is available</p>
+      </div>
+
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <p class="help is-danger">This email is invalid</p>
+      </div>
+
+      <div class="field">
+        <label class="label">Type of Project</label>
+        <div class="control">
+          <div class="select">
+            <select>
+                <optgroup>
+                  <option>Simple website</option>
+                  <option>Complex website</option>
+                </optgroup>
+                <optgroup>
+                  <option>Simple Android app</option>
+                  <option>Complex Android app</option>
+                </optgroup>
+                <optgroup>
+                  <option>Visual analytics</option>
+                  <option>Machine Learning</option>
+                </optgroup>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Message</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Textarea" name="message"></textarea>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <button type="button" class="button is-link">Submit</button>
+        </div>
+      </div>
+    </form>
+</section>
+
+
+
 {{end}}

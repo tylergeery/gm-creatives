@@ -2,11 +2,100 @@
 <html>
 <head>
   <title>{{.Title}}</title>
-  <link rel="stylesheet" type="text/css" href="/assets/index.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="/css/index.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 </head>
 <body>
+    <section class="hero is-primary is-large">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <img src="" alt="GM Creatives">
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroA" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item is-active" href="#home">
+                  Home
+                </a>
+                <a class="navbar-item" href="#solutions">
+                  Solutions
+                </a>
+                <a class="navbar-item" href="#pricing">
+                  Pricing
+                </a>
+                <a class="navbar-item" href="#contact">
+                  Contact
+                </a>
+                <a class="navbar-item" href="#about">
+                  About Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            GM Creatives
+          </h1>
+          <h2 class="subtitle">
+            Android, Web, Analytics Professionals
+          </h2>
+        </div>
+      </div>
+
+      <!-- Hero footer: will stick at the bottom -->
+      <div class="hero-foot">
+        <nav class="tabs end">
+          <div class="container">
+            <i class="fab fa-facebook is-large"></i>
+            <i class="fab fa-twitter is-large"></i>
+            <i class="fab fa-github is-large"></i>
+          </div>
+        </nav>
+      </div>
+    </section>
+
 
 {{template "content" .}}
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>GM Creatives</strong> 2018
+      </p>
+      <div class="columns">
+          <div class="column is-offset-5 is-1">
+              <a href="">
+                  <i class="fas fa-envelope"></i> Email
+              </a>
+          </div>
+          <div class="column is-1">
+              <a href="column">
+                  <i class="fas fa-phone"></i> Phone
+              </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
 </body>
 </html>
