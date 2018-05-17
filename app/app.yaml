@@ -4,13 +4,13 @@ api_version: go1
 handlers:
 
 - url: /css
-  static_dir: ../public/css/build
+  static_dir: ./public/css/build
 
 - url: /js
-  static_dir: ../public/js/build
+  static_dir: ./public/js/build
 
 - url: /assets
-  static_dir: ../public/img
+  static_dir: ./public/img
 
 # All URLs are handled by the application
 - url: /.*

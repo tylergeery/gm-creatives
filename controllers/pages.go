@@ -5,21 +5,16 @@ import (
 	"net/http"
 )
 
-var (
-	indexTemplate = template.Must(
-		template.ParseFiles("../views/index.html", "../views/home.html"))
-)
-
 type templateParams struct {
 	Title       string
 	Description string
 }
 
 // Home renders the static homepage
-func Home(w http.ResponseWriter, r *http.Request) {
+func Home(w http.ResponseWriter, r *http.Request, tpl *template.Template) {
 	params := templateParams{
 		Title:       "Gm Creatives: Application Partners",
 		Description: "",
 	}
-	indexTemplate.Execute(w, params)
+	tpl.Execute(w, params)
 }
